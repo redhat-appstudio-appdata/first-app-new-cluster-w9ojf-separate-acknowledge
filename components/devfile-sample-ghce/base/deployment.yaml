@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-ghce
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:w9ojf-devfile-sample-ghce
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7064c8f3a78504d288554a4a8a2b56f7594bb5fd9bd92c713ea428b36cef2800
         name: my-nodejs
         ports:
         - containerPort: 3001
