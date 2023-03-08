@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ghce
+  namespace: aronaldson-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7064c8f3a78504d288554a4a8a2b56f7594bb5fd9bd92c713ea428b36cef2800
+        name: my-nodejs
+        resources: {}
+status: {}
